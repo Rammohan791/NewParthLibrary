@@ -1,0 +1,231 @@
+:root {
+  --primary-navy: #1e293b;
+  --primary-navy-dark: #0f172a;
+  --emerald: #10b981;
+  --crimson: #ef4444;
+  --soft-bg: #f8fafc;
+  --text-muted: #64748b;
+  --border-soft: #e2e8f0;
+  --shadow-soft: 0 10px 30px rgba(15, 23, 42, 0.08);
+}
+
+body {
+  background: linear-gradient(135deg, var(--soft-bg) 0%, #eef4ff 100%);
+  color: var(--primary-navy);
+  transition: all 0.3s ease;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+main.container {
+  max-width: 1200px;
+}
+
+.view-section {
+  padding-bottom: 1rem;
+}
+
+.navbar {
+  background: linear-gradient(90deg, var(--primary-navy-dark) 0%, var(--primary-navy) 100%) !important;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.2);
+}
+
+.navbar-brand,
+.nav-link {
+  color: #ffffff !important;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: #dbeafe !important;
+  transition: color 0.2s ease;
+}
+
+.btn-primary {
+  background-color: var(--primary-navy) !important;
+  border-color: var(--primary-navy) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(30, 41, 59, 0.2);
+  background-color: var(--primary-navy-dark) !important;
+}
+
+.btn-success {
+  background-color: var(--emerald) !important;
+  border-color: var(--emerald) !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-success:hover,
+.btn-success:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(16, 185, 129, 0.2);
+}
+
+.btn-outline-danger,
+.btn-danger {
+  background-color: var(--crimson) !important;
+  border-color: var(--crimson) !important;
+  color: #ffffff !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-outline-danger:hover,
+.btn-danger:hover,
+.btn-outline-danger:focus,
+.btn-danger:focus {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(239, 68, 68, 0.2);
+}
+
+.card,
+.table {
+  box-shadow: var(--shadow-soft);
+  border: 1px solid var(--border-soft);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover,
+.table:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 14px 36px rgba(15, 23, 42, 0.12);
+}
+
+.badge.bg-success {
+  background-color: var(--emerald) !important;
+}
+
+.badge.bg-danger {
+  background-color: var(--crimson) !important;
+}
+
+.hero-card {
+  background: linear-gradient(135deg, var(--primary-navy) 0%, var(--primary-navy-dark) 100%);
+  color: #ffffff;
+  border: none;
+}
+
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid var(--border-soft);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--primary-navy);
+  box-shadow: 0 0 0 0.2rem rgba(30, 41, 59, 0.15);
+}
+
+.table thead {
+  background-color: #f1f5f9;
+}
+
+.table td,
+.table th {
+  vertical-align: middle;
+}
+
+@media (max-width: 992px) {
+  .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .hero-card {
+    padding: 1.25rem;
+  }
+
+  .navbar-brand {
+    font-size: 1rem;
+  }
+
+  .card,
+  .table {
+    box-shadow: 0 8px 20px rgba(15, 23, 42, 0.08);
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 0.96rem;
+  }
+
+  .navbar .container {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .navbar-nav .nav-item {
+    margin-bottom: 0.35rem;
+  }
+
+  .hero-card h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero-card .lead {
+    font-size: 1rem;
+  }
+
+  .btn,
+  .form-control,
+  .form-select {
+    width: 100%;
+  }
+
+  .d-flex.gap-2 {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .table-responsive {
+    font-size: 0.9rem;
+  }
+
+  .table td,
+  .table th {
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 576px) {
+  main.container {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+
+  .hero-card {
+    padding: 1rem;
+  }
+
+  .hero-card h1 {
+    font-size: 1.45rem;
+  }
+
+  .card-body {
+    padding: 1rem;
+  }
+
+  .btn-sm {
+    width: 100%;
+    margin-top: 0.25rem;
+  }
+
+  .table td,
+  .table th {
+    padding: 0.6rem 0.5rem;
+  }
+}
