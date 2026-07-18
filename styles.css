@@ -112,7 +112,7 @@ main.container {
 .payment-qr-display {
   width: min(100%, 240px);
   aspect-ratio: 1 / 1;
-  background-image: url("scanner.jpeg");
+  background-image: url("scanner.jpg");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
