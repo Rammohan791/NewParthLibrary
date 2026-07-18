@@ -109,6 +109,16 @@ main.container {
   border: none;
 }
 
+.payment-qr-display {
+  width: min(100%, 240px);
+  aspect-ratio: 1 / 1;
+  background-image: url("scanner/scanner.jpeg");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: block;
+}
+
 .text-muted {
   color: var(--text-muted) !important;
 }
